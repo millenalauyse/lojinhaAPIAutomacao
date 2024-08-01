@@ -5,7 +5,6 @@ import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pojo.UsuarioPojo;
 
 import static dataFactory.ProdutoDataFactory.criarUmProdutoComumComValorIgualA;
 import static dataFactory.UsuarioDataFactory.loginUsuario;
@@ -20,7 +19,7 @@ public class ProdutoTest {
     public void beforeEach(){
         //Configurando os dados de API rest da lojinha
         baseURI = "http://165.227.93.41";
-        basePath = "/lojinha";
+        basePath = "/lojinha-bugada";
 
         //Obter o token do usuario
         this.token = given()
